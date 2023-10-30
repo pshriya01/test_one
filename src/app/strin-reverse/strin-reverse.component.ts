@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./strin-reverse.component.css']
 })
 export class StrinReverseComponent {
+  inputText:string=''
+  reversedText:string=''
 
+  onChange(){
+    this.reversedText=''
+  }
+
+  reverseString(){
+    this.reversedText=this.inputText.split('').reverse().join('')
+  }
 }

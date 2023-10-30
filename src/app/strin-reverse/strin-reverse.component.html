@@ -1,5 +1,9 @@
 <div>
     <h2>String-Reverse App</h2>
-    <input type="text">
-    <button>Reverse</button>
+    <form>
+    <input id="string" type="text" name="inputText" [(ngModel)]="inputText" (keyup)="onChange()">
+</form>
+    <button (click)="reverseString()">Reverse</button>
+    <p>{{reversedText}}</p>
+
 </div>
